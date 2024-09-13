@@ -5,6 +5,8 @@
 // will compile your contracts, add the Hardhat Runtime Environment's members to the
 // global scope, and execute the script.
 const hre = require("hardhat");
+const { task } = require("hardhat/config");
+
 
 async function main() {
   const EtherWallet = await hre.ethers.getContractFactory("EtherWallet");
